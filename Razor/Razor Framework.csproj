@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Razor.Framework</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Razor</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationInstanceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AssemblyAttributeReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AttributeReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\ProductIdentifierAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\RequiresRegistrationAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInAttributeReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInCompanyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInDependencyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInDescriptionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInDevelopersAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInExportedFromAssemblyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInImageAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInProductFamilyMemberAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInTitleAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInVersionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\SnapInVisibilityAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CancellableProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellableProgressWindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CancelMultipleProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelMultipleProgressWindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CancelOneProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelOneProgressWindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandLineParsingEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\CategoryTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\CloningEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\EncodingEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\EnumDescConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\EnumHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\EventTracing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ExceptionEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\FileEncryptionEngines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\FlagsHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\IniFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ISupportsEditing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\IXmlConfigurationElementEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\PathCreationEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\PathCreationEngineEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\PathPermissionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuration\TypeLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\TypeSelectionTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\TypeSelectionTypeEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuration\ValuePropertyDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\Windows Security and Permissions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfiguration.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCategoryCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCategoryDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCategoryEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCategoryTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElementActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElementCancelEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElementEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElementTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationElementTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationManagerEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionCollectionTypeDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionPropertyDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionPropertyDescriptorMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionPropertyTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationOptionTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationPropertiesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationReader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationReaderEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationWriter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationWriterEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XmlConfigurationXmlBehindViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EncryptionEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\ConfigurationFeature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\Feature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureCancelEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureListViewItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\FeatureWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\SnapInFeature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullScreenCapableWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPanelTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IProgressViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRunnable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListViewSortManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MarqueeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MarqueeControlTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MenuItemSecurityManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadAlreadyExistsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJob.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJobAlreadyFinishedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJobAlreadyQueuedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJobListViewItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJobQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolJobStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadPoolThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadStartEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\BackgroundThreadStartInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiThreading\ManagedThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookDirectoryBrowseWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookDirectoryExporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookDirectoryImporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookDirectoryImporterException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookItemBackgroundThreadContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\AddressBookList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Connection Managers\AddressBookConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Connection Managers\AddressBookItemConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Connection Managers\AddressBookItemConnectionManagerList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Enums\AddressingActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Event Args\AddressBookDirectoryEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Event Args\AddressBookEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Event Args\AddressBookItemEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Event Args\AddressingEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Event Args\NameChangeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Exceptions\AddressNotValidException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Exceptions\NameNotUniqueException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Exceptions\NameNotValidException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Exceptions\PortFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Exceptions\PortOutOfRangeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Validators\AddressValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Validators\NameValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Addressing\Validators\PortValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AddressResolutionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\AutoUpdateManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateChangeSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateChangeSummaryAlreadyExistsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateChangeSummaryList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloadDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloadDescriptorCancelEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloadDescriptorEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloaderAlreadyExistsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateDownloaderList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateExceptionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateHref.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateManifest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateProductDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateProductDescriptorEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\AutoUpdateWebServiceProxy.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\ManifestQueryEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\Xml\XmlAutoUpdateManifestReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\Xml\XmlAutoUpdateManifestWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\Xml\XmlStringPair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\Common\Xml\XmlWriterUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\HttpAutoUpdateDownloader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\AutoUpdate\UncPathAutoUpdateDownloader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\ConnectionClosedByPeerException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\ExceptionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\Hosting\AspHost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\Hosting\AspRuntime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\Hosting\AspWorkerRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpByteParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpByteParserToken.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpChunk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpChunkedBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpChunkList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpChunkSizeLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpConnectionClosedByPeerException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpConnectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpConnectionList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpConnections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpContentEncodings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpControlChars.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpErrorSuccessException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpHeaderFieldToken.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpHeaderList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessageEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessageProgressEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessageReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessageTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMessageWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpProtocolVersion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpRequestDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpRequestEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpRequestLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpResponseEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpStatuses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpStatusLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpTransferEncodings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\HttpUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\MIME.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Http\RazorProtocolVersions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\IcmpEchoPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\IcmpPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\IcmpPacketReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\IcmpPacketWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\Pinger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\Icmp\PingerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\NetworkOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\OperationAbortedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortAuthority.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortDescriptorCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortMapCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortMapTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\PortMapViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\WellknownPortMaps\AssistantPortMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\WellknownPortMaps\ClassplusPortMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\PortMaps\WellknownPortMaps\RazorPortMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\SocketErrors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\SocketUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\UpDownTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PersistenceEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PriveledgeCodeAccessedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressWindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\DatedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\RuntimeClassProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\RuntimeClassProviderEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\Search.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\SearchEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\Searching.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\SnapInProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\VersionedDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Searching\VersionedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SerializationProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shell Image Lists.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShellInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\FormList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\InstallationEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\ISnapIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInApplicationContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptorChain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptorCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptorEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptorPropertyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInDescriptorsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInHostingEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInMetaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapIns\SnapInWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashWindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StartupManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timing\PerformanceCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Timing\PerformanceCounterEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracing\FormattedTextWriterTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VersioningBootStrap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowFlasher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\ImageSizeModes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\IWizard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\IWizardPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\Pre-Made Pages\WizardFinishedPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Pre-Made Pages\WizardStartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Pre-Made Pages\WizardWorkPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardButtonStyles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardNavigationDirections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardNavigationLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardNavigationMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardNavigationPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardNavigationPathList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageAttributeReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageDescriptorList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizards\WizardPageEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Networking\Http\Requests and Responses.txt" />
+    <Content Include="Networking\Http\RFC 2616 Header Field Definition Index.txt" />
+    <EmbeddedResource Include="CancellableProgressWindow.resx">
+      <DependentUpon>CancellableProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelMultipleProgressWindow.resx">
+      <DependentUpon>CancelMultipleProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelOneProgressWindow.resx">
+      <DependentUpon>CancelOneProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\Images.resx" />
+    <EmbeddedResource Include="Configuration\PathPermissionViewer.resx">
+      <DependentUpon>PathPermissionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\TypeSelectionTypeEditorControl.resx">
+      <DependentUpon>TypeSelectionTypeEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfiguration.resx">
+      <DependentUpon>XmlConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationCategory.resx">
+      <DependentUpon>XmlConfigurationCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationElement.resx">
+      <DependentUpon>XmlConfigurationElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationOption.resx">
+      <DependentUpon>XmlConfigurationOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationPropertiesWindow.resx">
+      <DependentUpon>XmlConfigurationPropertiesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationReader.resx">
+      <DependentUpon>XmlConfigurationReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationView.resx">
+      <DependentUpon>XmlConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationWriter.resx">
+      <DependentUpon>XmlConfigurationWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\XmlConfigurationXmlBehindViewer.resx">
+      <DependentUpon>XmlConfigurationXmlBehindViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\FeatureWindow.resx">
+      <DependentUpon>FeatureWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images.resx" />
+    <EmbeddedResource Include="InformationPanel.resx">
+      <DependentUpon>InformationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarqueeControl.resx">
+      <DependentUpon>MarqueeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\Addressing\AddressBookDirectoryBrowseWindow.resx">
+      <DependentUpon>AddressBookDirectoryBrowseWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\Icmp\PingerDialog.resx">
+      <DependentUpon>PingerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\PortMaps\PortMapViewer.resx">
+      <DependentUpon>PortMapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressWindow.resx">
+      <DependentUpon>ProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapIns\SnapInControl.resx">
+      <DependentUpon>SnapInControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapIns\SnapInDescriptorPropertyWindow.resx">
+      <DependentUpon>SnapInDescriptorPropertyWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapIns\SnapInDescriptorsWindow.resx">
+      <DependentUpon>SnapInDescriptorsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapIns\SnapInWindow.resx">
+      <DependentUpon>SnapInWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashWindow.resx">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Pre-Made Pages\WizardFinishedPage.resx">
+      <DependentUpon>WizardFinishedPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Pre-Made Pages\WizardStartPage.resx">
+      <DependentUpon>WizardStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Pre-Made Pages\WizardWorkPage.resx">
+      <DependentUpon>WizardWorkPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\WizardDialog.resx">
+      <DependentUpon>WizardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\WizardPageBase.resx">
+      <DependentUpon>WizardPageBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent>copy "$(TargetDir)*.dll" "$(SolutionDir)Hosting\Razor\bin\Debug"
+copy "$(TargetDir)*.pdb" "$(SolutionDir)Hosting\Razor\bin\Debug"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Framework", "Razor\Razor Framework.csproj", "{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Bootstrap", "Bootstrapping\Razor\Razor Bootstrap.csproj", "{AF357F1B-6BDF-4884-927F-FD17F89F9364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Hosting Engine", "Hosting\Razor\Razor Hosting Engine.csproj", "{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapIns.ApplicationWindow", "Snapins\ApplicationWindow\SnapIns.ApplicationWindow.csproj", "{F2E46282-AAC7-4579-8377-B1C33E32BDC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapIns.WindowPositioningEngine", "Snapins\WindowPositioningEngine\SnapIns.WindowPositioningEngine.csproj", "{FBACA243-B06E-4F99-9127-66A8A30555B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

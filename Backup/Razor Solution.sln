@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Framework", "Razor\Razor Framework.csproj", "{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Bootstrap", "Bootstrapping\Razor\Razor Bootstrap.csproj", "{AF357F1B-6BDF-4884-927F-FD17F89F9364}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor Hosting Engine", "Hosting\Razor\Razor Hosting Engine.csproj", "{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapIns.ApplicationWindow", "Snapins\ApplicationWindow\SnapIns.ApplicationWindow.csproj", "{F2E46282-AAC7-4579-8377-B1C33E32BDC5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapIns.WindowPositioningEngine", "Snapins\WindowPositioningEngine\SnapIns.WindowPositioningEngine.csproj", "{FBACA243-B06E-4F99-9127-66A8A30555B8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Debug.ActiveCfg = Debug|.NET
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Debug.Build.0 = Debug|.NET
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Release.ActiveCfg = Release|.NET
+		{5E6D53AD-1EA9-488F-BE39-FFB5A0EE6E1D}.Release.Build.0 = Release|.NET
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Debug.ActiveCfg = Debug|.NET
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Release.ActiveCfg = Release|.NET
+		{AF357F1B-6BDF-4884-927F-FD17F89F9364}.Release.Build.0 = Release|.NET
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Debug.ActiveCfg = Debug|.NET
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Debug.Build.0 = Debug|.NET
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Release.ActiveCfg = Release|.NET
+		{0742E2A5-FAC5-4956-881A-401DB6F4B1ED}.Release.Build.0 = Release|.NET
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Debug.ActiveCfg = Debug|.NET
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Release.ActiveCfg = Release|.NET
+		{F2E46282-AAC7-4579-8377-B1C33E32BDC5}.Release.Build.0 = Release|.NET
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Debug.ActiveCfg = Debug|.NET
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Release.ActiveCfg = Release|.NET
+		{FBACA243-B06E-4F99-9127-66A8A30555B8}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
