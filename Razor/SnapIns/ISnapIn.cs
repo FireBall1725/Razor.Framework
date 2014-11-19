@@ -55,7 +55,7 @@ namespace Razor.SnapIns
 		void OnUninstallLocalUserOptions(object sender, System.EventArgs e);
 		void OnStart(object sender, System.EventArgs e);
 		void OnStop(object sender, System.EventArgs e);
-        virtual void  addButtons();
-        virtual void removeButtons();
+        void  addButtons();
+        void removeButtons();
 	}
 }
