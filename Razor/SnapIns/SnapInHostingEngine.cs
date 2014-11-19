@@ -374,8 +374,11 @@ namespace Razor.SnapIns
 				foreach(SnapInDescriptor descriptor in _descriptors)
 					SnapInHostingEngine.Start(descriptor, true, _splashThread.Window);
 
-				// close the splash window
-				_splashThread.Window.Close();
+                // close the splash window
+                if (_splashThread.Window.InvokeRequired)
+                    _splashThread.Window.Invoke(new MethodInvoker(_splashThread.Window.Close));
+                else
+                    _splashThread.Window.Close();
 
 				// force garbage collection so we can get things rolling
 				GC.Collect();
